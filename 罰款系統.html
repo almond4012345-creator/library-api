@@ -338,8 +338,7 @@
         renderTable();
         
         // 背景呼叫 Python API 爬取書名
-        fetch(`https://my-library-api.onrender.com/api/get_book_title?acno=${bookId}`)
-   		 .then(res => res.json())
+fetch(`https://library-api-fcfa.onrender.com/api/get_book_title?acno=${bookId}`)   		 .then(res => res.json())
   
             .then(data => {
                 const rec = records.find(r => r.id === record.id);
